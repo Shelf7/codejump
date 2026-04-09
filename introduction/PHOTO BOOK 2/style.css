@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+}
+body {
+  color: #333;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.inner {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  padding: 7% 5%;
+  margin-bottom: 2.5rem;
+}
+header {
+  width: 45%;
+  max-width: 180px;
+  margin: 3rem 0.65rem 0.65rem;
+}
+.main-visual {
+  margin-bottom: 70px;
+}
+.gallery .inner {
+  background-color: white;
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+.section-title {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.index-list {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 0.8rem;
+  font-size: 0.9rem;
+  border: 1px solid black;
+}
+.index-list ol {
+  text-align: left;
+  display: block;
+  padding: 0 0 0 1rem;
+  gap: 1rem;
+}
+.index-list ol li {
+  margin-bottom: 1rem;
+}
+.index-list ol li:last-child {
+  margin-bottom: 0;
+}
+.photos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.photo {
+  margin-bottom: 1rem;
+  width: 80%;
+}
+@media (max-width: 768px) {
+  .photo {
+    width: 100%;
+  }
+}
+.detail-meta {
+  padding-bottom: 1rem;
+}
+.info-list {
+  font-size: 0.9rem;
+}
+.detail-meta dl {
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+.info-list dt {
+  font-weight: bold;
+}
+.info-list dd {
+  margin: 0 0 1rem;
+}
+.detail-text {
+  font-size: 0.85rem;
+}
+.detail-text a {
+  color: inherit;
+}
+.detail-text a:hover {
+  opacity: 0.7;
+}
+.detail .inner {
+  margin-bottom: 5rem;
+}
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1000px) {
+  .photos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .photo {
+    width: 49%;
+  }
+  .inner {
+    width: 80%;
+  }
+  .index-list {
+    padding: 1.5rem 0.8rem;
+  }
+  .index-list ol {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .detail-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  .detail-meta {
+    width: 30%;
+  }
+  .detail-text {
+    flex: 1;
+  }
+  .info-list dd {
+    margin: 0 0 0.5rem;
+  }
+  .detail-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .detail-meta dl {
+    border-right: 1px solid #333;
+    border-bottom: none;
+  }
+}
