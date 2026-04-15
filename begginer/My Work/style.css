@@ -134,3 +134,10 @@ footer {
   padding: 0.65rem;
   font-size: 0.5rem;
 }
+@media (min-width: 600px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
